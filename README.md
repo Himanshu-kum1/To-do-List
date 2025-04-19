@@ -5,4 +5,4 @@ Features:
 Add new tasks ,
 Mark tasks as completed ,
 Delete tasks ,
-Responsive designResponsive design ;
+Responsive design;

@@ -1,0 +1,158 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box; 
+}
+body{
+  background-color: var(--background);
+  color:var(--text);
+}
+:root {
+  --text:#ffffff;
+  --background:#000430;
+  --secondaryBackground:#171c48;
+  --purple:#828dff;
+  --teal:#24feee;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
+  width: 100%;
+}
+
+.statas-container {
+  display:flex;
+  padding:10px;
+  border-radius: 10px;
+  border: 2px solid var(--purple);
+  gap: 20px;
+  justify-content: space-between;
+}
+#progBar {
+  width: 100%;
+  height: 10px;
+  background-color: var(--secondaryBackground);
+  border-radius: 5px;
+  margin-top: 20px;
+}
+#progress {
+  width:0%;
+  height:10px;
+  background-color: var(--teal);
+  border-radius: 10px;
+  transition:all 0.3s ease;
+}
+#number {
+  width:100px;
+  height:100px;
+  background-color: var(--purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 30px;
+  font-weight: bold;
+}
+form {
+  margin-top:40px;
+  display: flex;
+}
+input {
+  font-size: 25px;
+  padding:5px;
+  background-color: var(--secondaryBackground);
+  border:1px solid var(--purple);
+  color:var(--text);
+  border-radius: 10px;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  outline: none;
+}
+button {
+  height:50px;
+  width:30px;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: var(--purple);
+  
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+.taskItem p {
+  flex: 1;               /* Take all available space */
+  margin: 0;
+  font-size: 18px;
+  word-break: break-word;
+}
+
+.addTask {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* Center child items */
+  padding: 10px;
+  margin-top: 30px;
+  width: 100%;           /* Take full width of parent */
+  max-width: 400px;
+  gap:10px;     /* Optional: prevent too wide */
+  list-style: none;
+}
+.task{
+  display: flex;
+  width:100%;
+}
+.taskItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: var(--secondaryBackground);
+  padding: 10px 15px;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+.checkbox {
+  width: 18px !important;
+  height: 18px;
+  flex-shrink: 0;
+}
+.task input {
+  width:20px;
+  height:20px;
+}
+
+.taskText {
+  flex: 1;
+  font-size: 18px;
+  margin: 0;
+  word-break: break-word;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+.task {
+  display: flex;
+  align-items: center;
+  gap:10px;
+}
+.para {
+  width:230px;
+}
+.completed p {
+  text-decoration: line-through;
+  color:var(--teal);
+}
